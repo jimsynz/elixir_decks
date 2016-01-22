@@ -1,5 +1,37 @@
 defmodule Decks do
 
+  def available do
+    [
+      Standard52: [
+        description:
+          """
+          Standard 52 Card French Deck.
+
+          Contains Ace, 1, 2, 3, 4, 5, 6, 7, 8, 9, Jack, Queen and King in Clubs, Hearts, Diamonds and Spade suits.
+          """,
+        variants: variants_for(module_for(:Standard52))
+      ],
+      Standard54: [
+        description:
+          """
+          Standard 54 Card French Deck.
+
+          Contains Ace, 1, 2, 3, 4, 5, 6, 7, 8, 9, Jack, Queen and King in Clubs, Hearts, Diamonds and Spade suits and black and red Jokers.
+          """,
+        variants: variants_for(module_for(:Standard52))
+      ],
+      FiveHundred: [
+        description:
+          """
+          500 Deck.
+
+          Contains 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, Queen, King, Ace and Jack of Clubs, Hearts, Diamonds and Spaces plus one or two Jokers.
+          """,
+        variants: variants_for(module_for(:FiveHundred))
+      ]
+    ]
+  end
+
   def get type, variant do
     module   = module_for type
     variants = variants_for module
