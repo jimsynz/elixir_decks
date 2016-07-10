@@ -66,7 +66,7 @@ defmodule Decks.FiveHundred.Cards do
     %Card{ Cards.joker_of(suit, :standard) | sort_value: 17 }
   end
 
-  def ace_of suit, v do
+  def ace_of suit, _ do
     %Card{ Cards.ace_of(suit, :standard) | sort_value: 18 }
   end
 
