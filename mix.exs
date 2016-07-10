@@ -28,7 +28,7 @@ defmodule Decks.Mixfile do
      maintainers: [ "James Harton <james@messagerocket.co>" ],
      licenses: ["MIT"],
      links: %{
-       "GitHub" => "https://github.com/elixir_decks"
+       "GitHub" => "https://github.com/jamesotron/elixir_decks"
      },
     ]
   end
