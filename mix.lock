@@ -1,2 +1,2 @@
-%{"espec": {:hex, :espec, "0.8.8"},
-  "meck": {:hex, :meck, "0.8.4"}}
+%{"espec": {:hex, :espec, "0.8.8", "f6fb05518659339ea6a967d68e5827e6ffb82b0fda6820391c93b923653ad741", [:mix], [{:meck, "~> 0.8.4", [hex: :meck, optional: false]}]},
+  "meck": {:hex, :meck, "0.8.4", "59ca1cd971372aa223138efcf9b29475bde299e1953046a0c727184790ab1520", [:rebar, :make], []}}
