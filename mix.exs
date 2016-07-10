@@ -8,12 +8,8 @@ defmodule Decks.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      preferred_cli_env: [espec: :test],
-     maintainers: [ "James Harton <james@messagerocket.co>" ],
-     licenses: ["MIT"],
-     links: %{
-       "GitHub" => "https://github.com/elixir_decks"
-     },
      description: description,
+     package: package,
      deps: deps]
   end
 
@@ -25,6 +21,16 @@ defmodule Decks.Mixfile do
     """
     Implements standard card decks for Elixir-based card games.
     """
+  end
+
+  def package do
+    [
+     maintainers: [ "James Harton <james@messagerocket.co>" ],
+     licenses: ["MIT"],
+     links: %{
+       "GitHub" => "https://github.com/elixir_decks"
+     },
+    ]
   end
 
   defp deps do
